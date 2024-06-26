@@ -98,6 +98,12 @@ display: none;
 
 }
 
+.home2 {
+  display: none; 
+}
+
+
+
 .heading{
 text-align: center;
 font-size: 4.5rem;
@@ -809,60 +815,83 @@ color: var(--sec-bg-color);
     }
 }
 
-@media (max-width : 365px) {
-
+@media (max-width: 365px) {
   html {
-    font-size: 30% ;
+    font-size: 30%;
   }
 
-  section {
-    padding: 5rem 1% 2rem;
+  .header{
+    padding: 5rem;
   }
 
   .home {
-    display:none;
+    display: none;
   }
 
-  .home2 {
-    max-height: min-content;
+ .home2 {
+    display: block; 
   }
+
   .home2 img {
-    width: 340px;
-    height: 550px;
-    margin-top:25rem ;
-  }
+    max-width: 100%;
+    height: 600px;
+    margin-top: 25rem;
 
-  .delicacies{
+  }
+  
+  .delicacies {
     grid-template-columns: 1fr;
   }
  
-  .delicacies-box{
+  .delicacies-box {
     width: 340px;
     padding: 5rem;
-
   }
 
-  .delicacies-box img{
-  border-radius: 15px;
+  .delicacies-box img {
+    border-radius: 15px;
   }
 
-  .products{
+  .products {
     margin: 3rem;
   }
 
   .list ul {
     padding-left: 10rem;
-    }
+  }
 
-    
   .list ul li:before {
     width: 85%;
-    background: #f1bd8d ;
-        
-    }
+    background: #f1bd8d;
+  }
 
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #e77913;
+  }
+    
+
+  .table-container th {
+    background-color:#fa7d2a;
+    color: #020202;
+    font-size: 3rem;
+    padding: 8px;
+    border-radius:6px;
+  }
+  
+  .table-container td {
+    border: 1px  #694708;
+    border-style:groove;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 2.5rem;
+    }
+    
   .gallery-container {
     grid-template-columns: 1fr;
   }
-
 }
